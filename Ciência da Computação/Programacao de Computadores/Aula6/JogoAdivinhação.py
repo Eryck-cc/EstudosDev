@@ -14,7 +14,7 @@ while tentativas < maximo_tentativas:
         tentativas = tentativas + 1
 
         if jogada == num_secreto:
-            print("PARABÉNS VOCÊ ACERTOU NO NÚMERO")
+            print("PARABÉNS VOCÊ ACERTOU O NÚMERO")
             break
         else: 
             print("Voçê errou, tente novamente")

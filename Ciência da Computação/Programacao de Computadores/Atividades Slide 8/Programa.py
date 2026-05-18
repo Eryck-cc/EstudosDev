@@ -83,6 +83,69 @@ while True:
             print(f"Esse número não está na lista, sua lista ficou {lista4}")
 
     elif algoritmo == "5":
-        
-        
+        lista5 = []
+        positivo = 0
+        negativo = 0
+        zeros = 0
 
+        for a in range(20):
+            numerosintei = int(input("Digite 20 números inteiros tanto negativos ou positivos: "))
+            
+            if numerosintei > 0:
+                positivo = positivo + 1
+            elif numerosintei < 0:
+                negativo = negativo + 1
+            else:
+                zeros = zeros + 1
+        
+        print(f"Fora digitados {positivo} números positivos; {negativo} números negativos e {zeros} números igual a zero!")
+            
+    elif algoritmo == "6":
+        lista6 = [7, 11, 23, 36, 42]
+        lista6_1 = [11, 5, 23, 36, 33]
+        valorigual = []
+        valordiferente = []
+        valores = []
+
+        print(f"Os valores que aparecem na primeira lista são {lista6} e na segunda {lista6_1}")
+
+        for c in lista6:
+            if c in lista6_1:
+                valorigual.append(c)
+            else:
+                valordiferente.append(c)
+        for d in lista6_1:
+            if d in lista6:
+                valorigual.append(d)
+            else:
+                valordiferente.append(d)
+
+        print(f"Os valores iguais nas duas listas são: {valorigual}")
+        print(f"Os valores diferentes nas duas listas são: {valordiferente}")
+
+    elif algoritmo == "7":
+        nome = ["Notebook", "Mouse", "Teclado", "Monitor", "Fone"]
+        precos = [4799.90, 89.90, 249.90, 899.90, 319.90]
+        estoque = [12, 45, 20, 8, 16]
+
+    elif algoritmo == "8":
+        lista8 = []
+        pares = 0
+        impares = 0
+
+
+        for e in range(12):
+            valoress = int(input("Digite 12 valores para serem adicionados na lista: "))
+            if valoress % 2 == 0: 
+                pares = pares + 1
+            else: 
+                impares = impares + 1
+        
+        ordemcres = lista8.sort(lista8)
+        ordemdecres = lista8.reverse(lista8)
+
+        print(f"A lista em ordem crescente fica {ordemcres}")
+        print(f"Em ordem descrescente fica {ordemdecres}")
+        print(f"A lista possui {pares} números pares.")
+        print(f"Possui {impares} numeros impar.")
+        
