@@ -124,9 +124,8 @@ while True:
         print(f"Os valores diferentes nas duas listas são: {valordiferente}")
 
     elif algoritmo == "7":
-        nome = ["Notebook", "Mouse", "Teclado", "Monitor", "Fone"]
-        precos = [4799.90, 89.90, 249.90, 899.90, 319.90]
-        estoque = [12, 45, 20, 8, 16]
+        produto = ["Nome", "Preço", "Estoque"]
+
 
     elif algoritmo == "8":
         lista8 = []
@@ -141,11 +140,13 @@ while True:
             else: 
                 impares = impares + 1
         
-        ordemcres = lista8.sort(lista8)
-        ordemdecres = lista8.reverse(lista8)
+        ordemcres = lista8.sort()
+        ordemdecres = lista8.reverse()
 
         print(f"A lista em ordem crescente fica {ordemcres}")
         print(f"Em ordem descrescente fica {ordemdecres}")
         print(f"A lista possui {pares} números pares.")
         print(f"Possui {impares} numeros impar.")
         
+    elif algoritmo == "Sair" or "sair":
+        break
