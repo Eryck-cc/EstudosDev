@@ -18,7 +18,7 @@ for i in range(n):
 soma = 0
 for i in range(n):
     for j in range(m):
-        soma += matriz[i][j]
+        soma += matriz
 
 print(f"\nA soma de todos os elementos é: {soma}")
 
