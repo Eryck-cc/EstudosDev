@@ -1,0 +1,1 @@
+Desafios respondidos por mim. (Desafios criados tanto por IAs quanto desafios de sites).
