@@ -70,3 +70,35 @@ ignis
 ---
 
 Boa sorte estudiosos das runas! 📜✨'''
+
+dicionario = {"Ignis": "Fogo",
+        "Algiz": "Proteção",
+        "Raidho": "Jornada",
+        "Kenaz": "Tocha",
+        "Laguz": "Água"}
+
+while True:
+    print("Digite [1] para perguntar o significado de uma runa e [2] para adicionar uma runa e seu significado ao grimorio e [3] para sair!")
+    escolha = int(input("Digite: "))
+
+    if escolha == 1:
+        for i in range(1):
+            print(f"A quantidade de runas é {len(dicionario)}")
+        print("As runas disponiveis são:")
+        for n in dicionario:
+            print(n)
+        runa = input("Digite o nome da runa que você deseja saber o significado (Escreva de forma correta): ")
+
+        if runa in dicionario:
+            print(f"O significado de {runa} é {dicionario[runa]}")
+    
+    elif escolha == 2:
+        nome = input("Digite o nome da runa: ")
+        significado = input("Seu significado: ")
+        dicionario.update({nome: significado})
+
+    elif escolha == 3:
+        print("...finalizando")
+        break
+    else:
+        print("Número incorreto tente novamente")
